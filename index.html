@@ -41,9 +41,6 @@
         <!-- Plantilla para el componente edit-form -->
         <script type="text/x-template" id="editForm">
 
-            <!--
-                 TODO: Componente edit-form
-            -->
             <div class="card-group"> 
                 <div class="card shadow text-center">               
                     <div class="card-body">
@@ -52,13 +49,13 @@
                                 {{ pelicula.prompt }}
                             </dt>                            
                             <input type="text" 
-                                v-if ="pelicula.prompt != 'Description'"
-                                v-bind:id="pelicula.name+indice"
-                                v-model="pelicula.value">
+                                        v-if ="pelicula.prompt != 'Description'"
+                                         v-bind:id="pelicula.name+indice"
+                                    v-model="pelicula.value">
                             <textarea type="text" 
                                 v-else 
-                                v-bind:id="pelicula.name+indice" 
-                                v-model="pelicula.value"></textarea>
+                                     v-bind:id="pelicula.name+indice" 
+                                    v-model="pelicula.value"></textarea>
                         </dl>
                         <input type="button" v-on:click="closeForm(indice)" value="Cerrar" class="btn btn-primary" style="color:#fff">
                     </div> 
@@ -71,10 +68,6 @@
 
         <!-- Plantilla para el componente item-data -->
         <script type="text/x-template" id="itemData">
-
-            <!--
-                 TODO: Componente item-data
-            -->
             <div class="card-group">
                 <div class="card shadow text-center">
                     <div class="card-body">
